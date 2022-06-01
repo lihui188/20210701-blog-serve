@@ -8,7 +8,7 @@ const tools = require("../public/tool")
 const date = require("../public/date")
 const { decrypt } = require("../config/js-crypto")
 //统一设置token有效时间  为了方便观察，设为10s
-const expireTime = 24 * 60 * 60 + "s"
+const expireTime = 1 * 24 * 60 * 60 + "s"
 // const expireTime = 60 + "s"
 
 //引入sequelize对象

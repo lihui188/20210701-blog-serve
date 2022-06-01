@@ -3,9 +3,9 @@ const fs = require("fs")
 //引入db配置
 const db = require("../config/db")
 //引入jwt做token验证
-const jwt = require("jsonwebtoken")
+// const jwt = require("jsonwebtoken")
 //解析token
-const tools = require("../public/tool")
+// const tools = require("../public/tool")
 // 现在时间
 const date = require("../public/date")
 
@@ -88,7 +88,7 @@ class filesController {
       realName,
       size,
       suffix,
-      type,
+      type
     }
     const query = await filesModule.add(params)
     ctx.status = 200
