@@ -12,7 +12,7 @@ module.exports = function (sequelize, DataTypes) {
         type: DataTypes.STRING,
         allowNull: true,
         field: "parent_id",
-        comment: "菜单图标",
+        comment: "父级菜单",
       },
       icon: {
         type: DataTypes.STRING,
@@ -25,6 +25,12 @@ module.exports = function (sequelize, DataTypes) {
         allowNull: false,
         field: "menu_name",
         comment: "菜单名称",
+      },
+      path: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        field: "path",
+        comment: "菜单路由",
       },
       sort: {
         type: DataTypes.INTEGER,
